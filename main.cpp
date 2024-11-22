@@ -22,10 +22,20 @@ void setup() {
 
 void loop() {
   checkRemote();
+  execute();
 }
 void checkRemote(){
   pressA = analogRead(a);
   if (pressA > 200) { open = true; }else{}
   pressB = analogRead(b); 
   if (pressB > 200) { open = false; }else{}
+}
+void execute(){
+  if(open = false){
+    int a = digitalRead(flapInput1);
+    digitalWrite(flapOutput1, a);
+    int b = digitalRead(flapInput2);
+    digitalWrite(flapOutput2, b);
+  }
+  else{}
 }
