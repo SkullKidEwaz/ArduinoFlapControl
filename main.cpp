@@ -10,6 +10,7 @@ int pressA;
 int pressB;
 
 bool open = false;
+bool opened = false;
 
 void setup() {
   pinMode(rxA, INPUT);
@@ -26,9 +27,9 @@ void loop() {
 }
 void checkRemote(){
   pressA = analogRead(a);
-  if (pressA > 200) { open = true; }else{}
+  if (pressA > 200) { open = true; opened = false; }else{}
   pressB = analogRead(b); 
-  if (pressB > 200) { open = false; }else{}
+  if (pressB > 200) { open = false; opened = false; }else{}
 }
 void execute(){
   if(open = false){
@@ -37,5 +38,10 @@ void execute(){
     int b = digitalRead(flapInput2);
     digitalWrite(flapOutput2, b);
   }
-  else{}
+  else{
+    if(opened = false){ open();}else{}}
+}
+void open(){
+//das was zum fick man zum öffnen machen muss machen x2 für 2 klappen
+  opened = true;
 }
