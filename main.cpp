@@ -1,12 +1,14 @@
 #include <Arduino.h>
 int rxA = A1;
 int rxB = A2;
-int pressA;
-int pressB;
 int flapOutput1 = 3;
 int flapInput1 = 4;
 int flapOutput2 = 5;
 int flapInput2 = 6;
+
+int pressA;
+int pressB;
+
 bool open = false;
 
 void setup() {
@@ -23,14 +25,7 @@ void loop() {
 }
 void checkRemote(){
   pressA = analogRead(a);
-  if (pressA > 200) {
-    open = true;
-  }
-  else{}
-  
+  if (pressA > 200) { open = true; }else{}
   pressB = analogRead(b); 
-  if (pressB > 200) {
-    open = false;
-  }
-  else{}
+  if (pressB > 200) { open = false; }else{}
 }
