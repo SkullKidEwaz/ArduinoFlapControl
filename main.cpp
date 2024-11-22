@@ -5,6 +5,7 @@ int flapOutput1 = 3;
 int flapInput1 = 4;
 int flapOutput2 = 5;
 int flapInput2 = 6;
+ledBuiltIn = 13;
 
 int pressA;
 int pressB;
@@ -19,6 +20,7 @@ void setup() {
   pinMode(flapInput1, INPUT);
   pinMode(flapOutput2, OUTPUT);
   pinMode(flapInput2, INPUT);
+  pinMode(ledBuiltIn, OUTPUT);
 }
 
 void loop() {
@@ -33,12 +35,14 @@ void checkRemote(){
 }
 void execute(){
   if(open = false){
+    digitalWrite(ledBuiltIn, LOW);
     int a = digitalRead(flapInput1);
     digitalWrite(flapOutput1, a);
     int b = digitalRead(flapInput2);
     digitalWrite(flapOutput2, b);
   }
   else{
+    digitalWrite(ledBuiltIn, HIGH);
     if(opened = false){ open();}else{}}
 }
 void open(){
