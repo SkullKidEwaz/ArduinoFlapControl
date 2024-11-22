@@ -1,11 +1,11 @@
 #include <Arduino.h>
-rxA = A1;
-rxB = A2;
-flapOutput1 = 3;
-flapInput1 = 4;
-flapOutput2 = 5;
-flapInput2 = 6;
-ledBuiltIn = 13;
+int rxA = A1;
+int rxB = A2;
+int flapOutput1 = 3;
+int flapInput1 = 4;
+int flapOutput2 = 5;
+int flapInput2 = 6;
+int ledBuiltIn = 13;
 
 int pressA;
 int pressB;
@@ -28,9 +28,9 @@ void loop() {
   execute();
 }
 void checkRemote(){
-  pressA = analogRead(a);
+  pressA = analogRead(rxA);
   if (pressA > 200) { open = true; opened = false; }else{}
-  pressB = analogRead(b); 
+  pressB = analogRead(rxB); 
   if (pressB > 200) { open = false; opened = false; }else{}
 }
 void execute(){
@@ -43,9 +43,9 @@ void execute(){
   }
   else{
     digitalWrite(ledBuiltIn, HIGH);
-    if(opened = false){ open();}else{}}
+    if(opened = false){ openFlap();}else{}}
 }
-void open(){
+void openFlap(){
 //das was zum fick man zum öffnen machen muss machen x2 für 2 klappen
   opened = true;
 }
