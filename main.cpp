@@ -1,10 +1,10 @@
 #include <Arduino.h>
-int rxA = A1;
-int rxB = A2;
-int flapOutput1 = 3;
-int flapInput1 = 4;
-int flapOutput2 = 5;
-int flapInput2 = 6;
+rxA = A1;
+rxB = A2;
+flapOutput1 = 3;
+flapInput1 = 4;
+flapOutput2 = 5;
+flapInput2 = 6;
 ledBuiltIn = 13;
 
 int pressA;
