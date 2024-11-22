@@ -22,19 +22,18 @@ void setup() {
   pinMode(flapInput2, INPUT);
   pinMode(ledBuiltIn, OUTPUT);
 }
-
-void loop() {
-  checkRemote();
-  execute();
-}
 void checkRemote(){
   pressA = analogRead(rxA);
   if (pressA > 200) { open = true; opened = false; }else{}
   pressB = analogRead(rxB); 
   if (pressB > 200) { open = false; opened = false; }else{}
 }
+void openFlap(){
+//das was zum fick man zum öffnen machen muss machen x2 für 2 klappen
+  opened = true;
+}
 void execute(){
-  if(open = false){
+  if(open == false){
     digitalWrite(ledBuiltIn, LOW);
     int a = digitalRead(flapInput1);
     digitalWrite(flapOutput1, a);
@@ -43,9 +42,9 @@ void execute(){
   }
   else{
     digitalWrite(ledBuiltIn, HIGH);
-    if(opened = false){ openFlap();}else{}}
+    if(opened == false){ openFlap();}else{}}
 }
-void openFlap(){
-//das was zum fick man zum öffnen machen muss machen x2 für 2 klappen
-  opened = true;
+void loop() {
+  checkRemote();
+  execute();
 }
