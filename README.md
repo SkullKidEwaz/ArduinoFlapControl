@@ -12,6 +12,6 @@ You will need:
 &emsp;some wires<br />&emsp;The right connectors so you dont have to cut your Car wires<br />&emsp;waterproof Housing
 <br /><br />
 ToDo:<br />
-&emsp;create Function for Opening Flap/Flaps<br />
+
 &emsp;make circuit/schematic<br />
 &emsp;Testing<br />
