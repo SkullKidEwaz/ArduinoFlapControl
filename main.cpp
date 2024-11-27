@@ -1,17 +1,17 @@
 #include <Arduino.h>
+
 int rxA = A1;
 int rxB = A2;
 int flapOutput1 = 3;
-int flapInput1 = 4;
+int flapInput1 = A4;
 int flapOutput2 = 5;
-int flapInput2 = 6;
+int flapInput2 = A6;
 int ledBuiltIn = 13;
 
 int pressA;
 int pressB;
 
 bool open = false;
-bool opened = false;
 
 void setup() {
   pinMode(rxA, INPUT);
@@ -24,25 +24,35 @@ void setup() {
 }
 void checkRemote(){
   pressA = analogRead(rxA);
-  if (pressA > 200) { open = true; opened = false; }else{}
+  if (pressA > 200) { open = true; }else{}
   pressB = analogRead(rxB); 
-  if (pressB > 200) { open = false; opened = false; }else{}
-}
-void openFlap(){
-//das was zum fick man zum öffnen machen muss machen x2 für 2 klappen
-  opened = true;
+  if (pressB > 200) { open = false; }else{}
 }
 void execute(){
   if(open == false){
     digitalWrite(ledBuiltIn, LOW);
-    int a = digitalRead(flapInput1);
-    digitalWrite(flapOutput1, a);
-    int b = digitalRead(flapInput2);
-    digitalWrite(flapOutput2, b);
+    int a = analogRead(flapInput1);
+    if(a >= 125)
+    {
+      digitalWrite(flapOutput1, 230);
+    }
+    else{
+      digitalWrite(flapOutput1, 26);
+    }
+    int b = analogRead(flapInput2);
+    if(b >= 125)
+    {
+      digitalWrite(flapOutput2, 230);
+    }
+    else{
+      digitalWrite(flapOutput2, 26);
+    }
   }
   else{
     digitalWrite(ledBuiltIn, HIGH);
-    if(opened == false){ openFlap();}else{}}
+    analogWrite(flapOutput1, 26);
+    analogWrite(flapOutput2, 26);
+    }
 }
 void loop() {
   checkRemote();
