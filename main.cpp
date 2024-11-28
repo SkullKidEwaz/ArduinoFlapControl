@@ -14,6 +14,7 @@ int pressB;
 bool open = false;
 
 void setup() {
+  Serial.begin(9600);
   pinMode(rxA, INPUT);
   pinMode(rxB, INPUT);
   pinMode(flapOutput1, OUTPUT);
@@ -21,6 +22,18 @@ void setup() {
   pinMode(flapOutput2, OUTPUT);
   pinMode(flapInput2, INPUT);
   pinMode(ledBuiltIn, OUTPUT);
+}
+void openFlap(){
+    digitalWrite(flapOutput1, HIGH);
+    delay(1);
+    digitalWrite(flapOutput1, LOW);
+    delay(9);
+}
+void closeFlap(){
+    digitalWrite(flapOutput1, LOW);
+    delay(1);
+    digitalWrite(flapOutput1, HIGH);
+    delay(9);
 }
 void checkRemote(){
   pressA = analogRead(rxA);
@@ -34,24 +47,23 @@ void execute(){
     int a = analogRead(flapInput1);
     if(a >= 125)
     {
-      digitalWrite(flapOutput1, 230);
+      closeFlap();
     }
     else{
-      digitalWrite(flapOutput1, 26);
+      openFlap();
     }
     int b = analogRead(flapInput2);
     if(b >= 125)
     {
-      digitalWrite(flapOutput2, 230);
+      closeFlap();
     }
     else{
-      digitalWrite(flapOutput2, 26);
+      openFlap();
     }
   }
   else{
     digitalWrite(ledBuiltIn, HIGH);
-    analogWrite(flapOutput1, 26);
-    analogWrite(flapOutput2, 26);
+    openFlap();
     }
 }
 void loop() {
