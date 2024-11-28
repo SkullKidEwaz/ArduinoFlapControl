@@ -1,5 +1,7 @@
 # ArduinoFlapControl
-Control your Exhaust Flap with an Arduino Nano, an RF Receiver and a Remote.
+Control your Exhaust Flap with an Arduino Nano, an RF Receiver and a Remote.<br />
+This is only working with VAG Flaps.<br />
+Mercedes eg. uses Lin Bus.
 <br /><br /><br />
 I used a 4 Channel RF Receiver(cheap one from Amazon), but only used 2 Channels.
 <br /><br />
@@ -15,3 +17,6 @@ ToDo:<br />
 
 &emsp;make circuit/schematic<br />
 &emsp;Testing<br />
+<br />Tested on:<br />
+&emsp;Audi S3 with electronic Flaps<br />
+&emsp;Lamborghini Urus mj. 2024<br />
