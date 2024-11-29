@@ -45,7 +45,7 @@ void execute(){
   if(open == false){
     digitalWrite(ledBuiltIn, LOW);
     int a = analogRead(flapInput1);
-    if(a >= 125)
+    if(a >= 100)
     {
       closeFlap();
     }
@@ -53,13 +53,14 @@ void execute(){
       openFlap();
     }
     int b = analogRead(flapInput2);
-    if(b >= 125)
+    if(b >= 100)
     {
       closeFlap();
     }
     else{
       openFlap();
     }
+    Serial.println("a: " + String(a) + ", b: " + String(b));
   }
   else{
     digitalWrite(ledBuiltIn, HIGH);
