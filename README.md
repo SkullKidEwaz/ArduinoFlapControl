@@ -11,7 +11,6 @@ You will need:
 &emsp;1x Remote [Example](https://www.amazon.de/-/en/DieseRC-Learning-Wireless-Transmitter-Receiver-Kt05-3/dp/B0B2LCJSV2?crid=1Q1BCW4LM02MN&dib=eyJ2IjoiMSJ9.nNskabRn6HTI1YkgJqTpUP-bczd9-FGQ5Hq2Ib3vIcHo4mDS4WvSgzQ8mUfTyUhJmqkhFdEjG-Q7UiYUY023fbDSNuZPiiGy2SXWncFZXilbKhasw8xmcgkgmSvzOd5Y1RUYPnymAsmVTOWZx0zSCKeFsWRTNPCwSQoYtkSDsqozNiSNZklCqX8NGegqQuuJ_4L_iSbqd0bsPqu7E3ATu5_1MkXWN-pJlmj0vbXzu5InxXEoe9XcCTqT5ncNB4Pps20JMOY4xC8MjIVYwUEvUYAt-1vaLBOYaULhLpqmmGs.rP6GXv4RrcUFYiVLkN6B8_M7B2w2fMxswB2JYNqJu1E&dib_tag=se)
 <br /><br />
 ToDo:<br />
-
 &emsp;make circuit/schematic<br />
 &emsp;Testing<br />
 <br />Tested on:<br />
