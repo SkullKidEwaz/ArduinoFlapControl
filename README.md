@@ -10,7 +10,6 @@ You will need:
 &emsp;1x RF Receiver 433MHZ [Example](https://www.amazon.de/-/en/Wireless-Receiver-Transmitter-Raspberry-Learning/dp/B0838WXFKJ?crid=3J9ENXN9VQB5&dib=eyJ2IjoiMSJ9.2e1dP4mb2b5ASUn1R3JRiavMNNSNOye_x5jBjUhxnLYAihMpO2-aEgg5luBJVuIRbahjIAtqcMaPYek7C-s0fTjmuOqxBI8DXe31Gx5CqiiO39g8sAq03OPXJLhqMyrsRd_U1Kb2hzYXFTtmEWwO3uR1skYn6HLlPrjLejVd4QiCOb6o2BjTUlI0A1RqvTZIuzkmCe7kKjkhHv6xZbrQQBBXxKnfGPyZzj9Q8ycXj-o.1FbItLtXAUiFC0aB1gTEbNWw1czw3PoQgSf26tv3XAs&dib_tag=se), but only the receiver Part<br />
 &emsp;1x Remote [Example](https://www.amazon.de/-/en/DieseRC-Learning-Wireless-Transmitter-Receiver-Kt05-3/dp/B0B2LCJSV2?crid=1Q1BCW4LM02MN&dib=eyJ2IjoiMSJ9.nNskabRn6HTI1YkgJqTpUP-bczd9-FGQ5Hq2Ib3vIcHo4mDS4WvSgzQ8mUfTyUhJmqkhFdEjG-Q7UiYUY023fbDSNuZPiiGy2SXWncFZXilbKhasw8xmcgkgmSvzOd5Y1RUYPnymAsmVTOWZx0zSCKeFsWRTNPCwSQoYtkSDsqozNiSNZklCqX8NGegqQuuJ_4L_iSbqd0bsPqu7E3ATu5_1MkXWN-pJlmj0vbXzu5InxXEoe9XcCTqT5ncNB4Pps20JMOY4xC8MjIVYwUEvUYAt-1vaLBOYaULhLpqmmGs.rP6GXv4RrcUFYiVLkN6B8_M7B2w2fMxswB2JYNqJu1E&dib_tag=se)
 <br /><br />
-<br /><br />
 ToDo:<br />
 
 &emsp;make circuit/schematic<br />
