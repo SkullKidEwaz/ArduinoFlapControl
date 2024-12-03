@@ -4,6 +4,10 @@ This is only tested with VAG PWM Flaps.
 <br /><br /><br />
 I used a 4 Channel RF Receiver(cheap one from Amazon), but only used 2 Channels.
 <br /><br />
+Configurable for 1 or 2 Flaps, they can be controlled via 1 Input or Independent with 2 Inputs.<br />
+The Device can control Pneumatic valves with an Relay or 12V PWM wit a Pull up Transistor.<br />
+Lin Bus Flaps like the new Mercedes G Wagon cannot be controlled with this circuit, even tho the Flaps look like the PWM ones. Even same Numbers??<br />
+<br /><br />
 You will need:
 <br />
 &emsp;1x Arduino Uno [Example](https://www.amazon.de/-/en/Development-Connector-Microcontroller-Compatible-Arduino/dp/B0CX1B4X7M?crid=1LJVF5VUFRSUH&dib=eyJ2IjoiMSJ9.cc4yOvtKyvoZE6RptlkT8c3ESYKSzO55JsjactZJ82vCBD2eAys_W70dC4wTMX6gJVMH3PSWQJBUc7ccbXYPkJLhfB_7UA-B74PVodzZGO6jRwAbV7wa8DVSicrpQFEU3J71eO0oRK7tdmJoX628qxuIOCYtJBhqUIO_ZLYXFVJsMc4jrbZhlC3UCXcpIizzikvnhglF-AR3wyC_JEZH7B5YmsbiXpfbocW0s-DqcBo._jtZc5qF_1bvCJEgwhEtMJxz1GDpLoMqusFJyk0IXAo&dib_tag=se)<br />
