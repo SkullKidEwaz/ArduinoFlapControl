@@ -24,7 +24,7 @@ bool Pneumatic = false;                 //set output mode for Relay output      
 //Decide if the Remote should open or close the Flaps
 bool remoteOpen = true;                 //true = Open the Flap when activate; false = Close the Flap when active
 
-//1 or 2 Flaps options, for 2 different flap behaviors yoou have to enable both channels and set mono to false
+//1 or 2 Flaps options, for 2 different flap behaviors you have to enable both channels and set mono to false
 bool twoFlapMode = true;                //use two flaps
 bool channel1In = true;                 //use flapInput1 Input
 bool channel2In = false;                //use flapInput2 Input
