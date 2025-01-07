@@ -1,6 +1,7 @@
 # ArduinoFlapControl
 Control your Exhaust Flaps with an Arduino Nano, an RF Receiver and a Remote.<br />
 This is only tested with VAG PWM Flaps.
+<br />A Circuit will soon be created, so you know how to wire everything up!!!!!
 <br /><br /><br />
 I used a 4 Channel RF Receiver(cheap one from Amazon), but only used 2 Channels.
 <br /><br />
