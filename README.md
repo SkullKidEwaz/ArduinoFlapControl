@@ -18,11 +18,11 @@ You will need:
 <br /><br />
 ToDo:<br />
 &emsp;Make a better Readme<br /><br />
-&emsp;Do a little documentation<br />
-&emsp;Make specific file for arduino ide<br />
-&emsp;add platformio files, so anyone can download and edit/flash<br />
+&emsp;Do a little more documentation<br />
 &emsp;make circuit/schematic/pcb design<br />
+&emsp;Take Pictures and Upload them<br />
 &emsp;Testing the Pneumatic Modus<br />
 <br />Tested on:<br />
 &emsp;Audi S3 mj. 2017<br />
 &emsp;Lamborghini Urus mj. 2024<br />
+<br />This Project is Written in Visual Studio Code with platformio addon.
